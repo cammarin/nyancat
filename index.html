@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>[PCS2190] Trabalho Final | NYAN CAT!</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="image_src" href="thumbnail.png" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAjtv6ALSU/wD///8ADQ0NALhQzACMjIsA2X/rAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEZmQEZmQABERERERERAABFGZmZmZmQAdGZkREREZkBGImRmRmRiJEYiZmZmZmIkRmZEZmRkRmRGZjRmZmNGZEZmZmZmZmZkVGZmZmZmZkB0ZmZmZmZmQHRmZkREZmZAdGZkd1FGZkB0ZkdXcURmQFdEd3dxQEQAd3dXdxFAAADBBwAAAAcAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAATAAAAHwAA" rel="icon" type="image/x-icon" />
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link href="nyancat.css" rel="stylesheet" type="text/css" />
+    <script src="processing.js"></script>
+  </head>
+  <body>
+	  <script type="text/javascript">
+	  	if (localStorage.lastScore)
+		{
+			localStorage.lastScore = Number (localStorage.lastScore);
+		}
+		else
+		{
+			localStorage.lastScore = 0;
+		}
+		
+		if (localStorage.bestScore)
+		{
+			localStorage.bestScore = Number (localStorage.bestScore);
+		}
+		else
+		{
+			localStorage.bestScore = 0;
+		}
+	</script>
+    <audio id="intro" preload="auto">
+		<source src="resources/audio/intro.ogg" type="audio/ogg" />
+	</audio>
+   	<audio id="song" preload="auto">
+		<source src="resources/audio/song.ogg" type="audio/ogg" />
+	</audio>
+   	<audio id="nyanja" preload="auto">
+		<source src="resources/audio/nyanja.ogg" type="audio/ogg" />
+	</audio>
+	<div id="outer">
+    	<div id="container">
+        	<div id="inner">
+				<canvas data-processing-sources="nyancat.pde draw.pde screens.pde alphabet.pde miscellaneous.pde audio.pde input.pde"></canvas>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
